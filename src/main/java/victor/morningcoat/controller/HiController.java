@@ -10,5 +10,8 @@ public class HiController {
     public String index() {
         return "Hello! I'm Victor!";
     }
-
+    @RequestMapping("/secret")
+    public String secret() {
+        return "Welcome to secret page!";
+    }
 }
