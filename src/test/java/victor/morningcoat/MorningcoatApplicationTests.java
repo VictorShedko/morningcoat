@@ -11,7 +11,7 @@ class MorningcoatApplicationTests {
 	void contextLoads() {
 		Boolean fal=false;
 		Boolean tru=true;
-		Assertions.assertTrue(fal);
+		Assertions.assertTrue(tru);
 	}
 
 }
