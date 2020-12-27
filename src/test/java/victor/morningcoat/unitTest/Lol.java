@@ -10,6 +10,6 @@ public class Lol {
     public void lol(){
         Boolean fal=false;
         Boolean tru=true;
-        Assertions.assertTrue(tru);
+        Assertions.assertTrue(fal);
     }
 }
