@@ -9,7 +9,9 @@ class MorningcoatApplicationTests {
 
 	@Test
 	void contextLoads() {
-
+		Boolean fal=false;
+		Boolean tru=true;
+		Assertions.assertTrue(tru);
 	}
 
 }
