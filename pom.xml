@@ -10,12 +10,12 @@
 	</parent>
 	<groupId>victor</groupId>
 	<artifactId>morningcoat</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>morningcoat</name>
 	<description>my own represintation</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
