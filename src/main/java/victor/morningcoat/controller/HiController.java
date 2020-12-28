@@ -14,4 +14,8 @@ public class HiController {
     public String secret() {
         return "Welcome to secret page!";
     }
+    @RequestMapping("/genezvali")
+    public String genezvali() {
+        return "Understandable have a nice day!";
+    }
 }
