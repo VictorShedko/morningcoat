@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gre
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gre
+  template:
+    metadata:
+      labels:
+        app: gre
+        visualize: "true"
+    spec:
+      containers:
+        - name: gre
+          image: vitorrrio/coat:k8s1
+          ports:
+            - containerPort: 8082
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    visualize: "true"
+  name: gre
+spec:
+  selector:
+    app: gre
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8082
+      targetPort: 8082
+  type: ClusterIP
